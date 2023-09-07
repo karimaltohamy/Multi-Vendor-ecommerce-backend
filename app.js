@@ -8,7 +8,7 @@ const cors = require("cors");
 app.use(
   cors({
     credentials: true,
-    origin: "http://localhost:5173",
+    origin: "https://multi-vendor-ecommerce-theta.vercel.app",
     optionsSuccessStatus: 200, // For legacy browser support
   })
 );
