@@ -6,9 +6,9 @@ const conactionMongodb = require("./db/database");
 //   console.log("shutting down the server for handling uncaught exception");
 // });
 
-// if (process.env.NODE_ENV !== "production") {
-//   require("dotenv").config({ path: "./config/.env" });
-// }
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config({ path: "./config/.env" });
+}
 
 app.get("/", (req, res) => {
   res.send("run");
