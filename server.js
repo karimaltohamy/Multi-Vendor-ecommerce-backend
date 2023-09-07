@@ -14,9 +14,6 @@ app.get("/", (req, res) => {
   res.send("run");
 });
 
-
-
-
 // connect mongodb
 conactionMongodb();
 
