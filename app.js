@@ -8,7 +8,7 @@ const cors = require("cors");
 app.use(
   cors({
     credentials: true,
-    origin: "hhttps://multi-vendor-ecommerce-theta.vercel.app",
+    origin: "http://localhost:5173",
     optionsSuccessStatus: 200, // For legacy browser support
   })
 );
@@ -19,7 +19,6 @@ app.use(express.static("uploads"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-
 // routes
 const user = require("./controller/user");
 const shop = require("./controller/shop");
@@ -28,6 +27,7 @@ const event = require("./controller/event");
 const couponCode = require("./controller/couponCode");
 const payment = require("./controller/payment")
 const order = require("./controller/order")
+
 
 app.use("/api/users", user);
 app.use("/api/shops", shop);

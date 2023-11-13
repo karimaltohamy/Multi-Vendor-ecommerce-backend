@@ -47,8 +47,7 @@ router.post("/create-user", upload.single("file"), async (req, res, next) => {
   }
 });
 
-// loggin
-
+// login user
 router.post("/login-user", async (req, res, next) => {
   const { email, password } = req.body;
   try {
